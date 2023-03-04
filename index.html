@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitória</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./settings.css" />
+  </head>
+  <body>
+    <main>
+      <h2 class="colored-text">
+        vitória!
+        <img src="./public/victory.svg" alt="Ícone de vitória" />
+      </h2>
+
+      <p>
+        A sua organização
+        <span class="colored-text" id="organization">Social club</span> <br />
+        venceu a disputa de território
+      </p>
+
+      <ul id="match-result">
+        <li>
+          <img src="./public/territory.svg" alt="Território conquistado" />
+          <span>
+            Conquistou o território
+            <span class="colored-text" id="territory">farm maconha</span>
+          </span>
+        </li>
+        <li>
+          <img src="./public/opponent.svg" />
+          <span>
+            Venceu a batalha contra
+            <span class="colored-text" id="opponent"> Camorra</span>
+          </span>
+        </li>
+        <li>
+          <img src="./public/skull.svg" alt="Caveira" />
+          <span>
+            Sua equipe efetuou
+            <span class="colored-text" id="team-casualities">13</span>
+            baixas
+          </span>
+        </li>
+        <li>
+          <img src="./public/remaining-members.svg" alt="Mãos dadas" />
+
+          <span>
+            Restaram
+            <span class="colored-text" id="remaining-members">8</span> membros
+            da sua equipe
+          </span>
+        </li>
+        <li>
+          <img src="./public/next-match.svg" alt="Relógio" />
+          <span>
+            Próxima disputa em
+            <span class="colored-text" id="next-match">24</span> horas
+          </span>
+        </li>
+      </ul>
+    </main>
+
+    <script src="./animation-delay.js"></script>
+  </body>
+</html>

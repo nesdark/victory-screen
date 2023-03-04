@@ -1,0 +1,67 @@
+/* SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --background-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(23, 27, 26, 0.6) 51.04%,
+    rgba(32, 40, 39, 0.42) 100%
+  );
+
+  --primary-color: var(--green);
+
+  --green: #16a085;
+
+  --gray: #999999;
+  --light-gray: #d6d6d6;
+
+  --fs-medium: clamp(2rem, 1rem + 1vw, 4.8rem);
+  --fs-big: clamp(3rem, 1.5rem + 1.5vw, 7rem);
+  --fs-title: clamp(8rem, 3.5rem + 3.5vw, 17rem);
+
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+
+  --line-height-normal: 6rem;
+  --line-height-large: 8rem;
+}
+
+body * {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+
+  background: #454242;
+}
+
+.colored-text {
+  color: var(--primary-color);
+
+  text-transform: capitalize;
+}
+
+/* ANIMATION */
+@keyframes FadeInTop {
+  from {
+    transform: translateY(-3.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
